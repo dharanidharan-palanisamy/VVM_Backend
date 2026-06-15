@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // ─── MIDDLEWARE ────────────────────────────────────────────────────────────────
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001'],
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://vvm-frontend-client.vercel.app', 'https://vvm-frontend-admin.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
